@@ -8,7 +8,7 @@ var app = new PIXI.Application();
 document.body.appendChild(app.view);
 
 // load the texture we need
-PIXI.loader.add('bunny', 'bunny.png').load(function(loader, resources) {
+PIXI.loader.add('grass', 'grass.png').load(function(loader, resources) {
 
     // This creates a texture from a 'bunny.png' image.
     var bunny = new PIXI.Sprite(resources.bunny.texture);
