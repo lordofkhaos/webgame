@@ -11,22 +11,22 @@ document.body.appendChild(app.view);
 PIXI.loader.add('grass', 'grass_PNG4933.png').load(function(loader, resources) {
 
     // This creates a texture from a 'bunny.png' image.
-    var bunny = new PIXI.Sprite(resources.bunny.texture);
+    var grass = new PIXI.Sprite(resources.grass.texture);
 
     // Setup the position of the bunny
-    bunny.x = app.renderer.width / 2;
-    bunny.y = app.renderer.height / 2;
+    grass.x = app.renderer.width / 2;
+    grass.y = app.renderer.height / 2;
 
     // Rotate around the center
-    bunny.anchor.x = 0.5;
-    bunny.anchor.y = 0.5;
+    grass.anchor.x = 0.5;
+    grass.anchor.y = 0.5;
 
     // Add the bunny to the scene we are building.
-    app.stage.addChild(bunny);
+    app.stage.addChild(grass);
 
     // Listen for frame updates
     app.ticker.add(function() {
          // each frame we spin the bunny around a bit
-        bunny.rotation += 0.01;
+        grass.rotation += 0.01;
     });
 });
